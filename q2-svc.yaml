@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2024-06-14T12:55:38Z"
+  labels:
+    app: nginx-dp
+  name: nginx-dp
+  namespace: default
+  resourceVersion: "4356"
+  uid: 8dff3a70-f8d8-44aa-943b-66a69cde18b0
+spec:
+  allocateLoadBalancerNodePorts: true
+  clusterIP: 10.110.46.97
+  clusterIPs:
+  - 10.110.46.97
+  externalTrafficPolicy: Cluster
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - name: 80-8080
+    nodePort: 30952
+    port: 80
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: nginx-dp
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer: {}

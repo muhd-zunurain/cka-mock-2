@@ -1,0 +1,8 @@
+apiVersion: v1
+data:
+  mayo: white
+  mustard: yellow
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: mustard

@@ -1,0 +1,8 @@
+piVersion: v1
+data:
+  password: UGFzc3cwcmQx
+  username: YWRtaW5fZGFu
+kind: Secret
+metadata:
+  creationTimestamp: null
+  name: danish-secret

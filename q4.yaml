@@ -1,0 +1,8 @@
+apiVersion: v1
+data:
+  password: aW1hbWF6aW5n
+  username: bWFzdGVyX2FkbWlu
+kind: Secret
+metadata:
+  creationTimestamp: null
+  name: db-user-pass

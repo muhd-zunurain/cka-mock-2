@@ -1,0 +1,2 @@
+controlplane $ kubectl scale deployment nginx-dp --replicas=2
+deployment.apps/nginx-dp scaled

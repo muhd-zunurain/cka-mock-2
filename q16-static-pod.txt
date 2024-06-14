@@ -1,0 +1,6 @@
+controlplane $ ssh node01
+Last login: Fri Jun 14 14:12:48 2024 from 10.244.3.92
+node01 $ cd /etc/kubernetes/manifests/
+node01 $ ls -lrt
+total 4
+-rw-r--r-- 1 root root 263 Jun 14 14:12 q16.yaml

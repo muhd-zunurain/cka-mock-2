@@ -1,0 +1,4 @@
+controlplane $ kubectl get nodes -o json | grep osImage >> all-nodes-os-info.txt 
+controlplane $ cat all-nodes-os-info.txt 
+                    "osImage": "Ubuntu 20.04.5 LTS",
+                    "osImage": "Ubuntu 20.04.5 LTS",

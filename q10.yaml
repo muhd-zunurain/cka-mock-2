@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: q10
+  name: q10
+spec:
+  containers:
+  - image: nginx
+    name: q10
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+  nodeSelector:
+    kubernetes.io/hostname: controlplane
+status: {}
